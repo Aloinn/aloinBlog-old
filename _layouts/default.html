@@ -1,28 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MemoBlog</title>
+    <title>Alain Lam</title>
     <link rel="shortcut icon" href="{{site.url}}/mustang.ico" >
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="{{site.url}}/css/Theme.css">
     <meta charset ="utf-8">
   </head>
 
   <body>
     <header>
-      <a href="{{site.url}}/index.html">
-        <h1 id="title">Alain Lam</h1>
+      <!-- NAVIGATION BAR-->
+      <a href="{{site.url}}">
+        <h1 id="title">
+          My name is
+          <span id="header-my-name"> Alain Lam</span>
+        </h1>
+      </a>
+      <ul>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
       </a>
     </header>
+
     <main>
 
         {{ content }}
 
     </main>
+
     <footer>
-      <div class="end">
-        <p>2018 &copy Alain Lam</p>
-      </div>
+      <ul>
+        <li>
+          <!-- me-box -->
+          <!-- Little box with my picture and name -->
+          <div class="me-box">
+            <img src="#" alt="Alain Lam" class="me-picture">
+            <div class="me-body">
+              <h3 class="me-body-title">
+                Yoo!
+              </h3>
+              <p class="me-body-desc">
+                I'm <a href="#">Alain Lam</a>, a web designer, game developer, producer,
+                guitarist and violinist located in ol' Toronto.
+              </p>
+            </div>
+          </div>
+          <!-- end of me-box-->
+        </li>
+        <li><!-- Music -->
+          <a href="#" class="me-body">
+            <h3 class="me-body-title">
+              music
+            </h3>
+            <p class="me-body-desc">
+              I produce beats with my friends. I also play guitar and violin.
+              It's nothing serious but you can check out my soundcloud
+            </p>
+          </a>
+        </li><!-- endMusic -->
+        <li><!-- Front End -->
+          <a href="#" class="me-body">
+            <h3 class="me-body-title">
+              frontend design
+            </h3>
+            <p class="me-body-desc">
+              I write HTML, CSS and JavaScript. My goal is to create unique
+              experiences that look good and feel good on all screens.
+            </p>
+          </a>
+        </li><!-- endFront end -->
+        <li><!-- Games -->
+          <a href="#" class="me-body">
+            <h3 class="me-body-title">
+              games
+            </h3>
+            <p class="me-body-desc">
+              I make Unity and GM Studio games in C++ and GML.
+              check out some of my game projects!
+            </p>
+          </a>
+        </li><!-- endGames -->
+        <li><!-- contact -->
+          <span href="#" class="me-body">
+            <h3 class="me-body-title">
+              contact
+            </h3>
+            <p class="me-body-desc">
+              You can keep up with me on
+              <a href="#">Twitter</a>,
+              <a href="#">Instagram</a>,
+              <a href="#">Github</a>,
+              <a href="#">Spotify</a>
+            </p>
+          </span>
+        </li><!-- end contact -->
+      </ul>
     </footer>
   </body>
 
