@@ -1,0 +1,38 @@
+$color-a: #FFF8BF;
+$color-c: #454E54;
+
+$color-d: #FFF94C;
+$color-e: #75262C;
+
+$f-color: #261A15;
+$f-fam:  'Roboto', sans-serif;
+$f-weight: 400;
+// set-font (color, weight, size);
+@mixin set-font($a, $b, $c){
+  font-family:$f-fam;
+
+  color: $a;
+  font-weight: $b;
+  font-size: $c;
+}
+*{
+  margin:0px auto;
+  text-decoration: none;
+  @include set-font($f-color,400,1rem);
+}
+:root{
+  font-size: 62.5%;
+}
+body{
+  header{
+    h1{
+      line-height: 3rem;
+      @include set-font($color-c,400,3rem)
+    }
+    .header-my-name{
+      display:block;
+      @include set-font($f-color,1000,4rem)
+    }
+  }
+  background-color: $color-a;
+}
